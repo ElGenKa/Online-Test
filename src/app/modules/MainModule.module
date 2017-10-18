@@ -1,0 +1,25 @@
+{
+  "props": [],
+  "components": {
+    "ini": {
+      "type": "script\\storage\\IniStorage",
+      "x": 336,
+      "y": 128,
+      "props": {
+        "path": "config.ini",
+        "autoSave": "1",
+        "multiLineValues": "1"
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 384,
+      "y": 128,
+      "props": {
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    }
+  }
+}

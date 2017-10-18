@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2512" prefWidth="1088" styleClass="">
+  <children>
+    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="352" id="image" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="496">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="preparetest" layoutX="0" layoutY="280" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="522" prefWidth="1000" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="l_info" layoutX="64" layoutY="72" prefHeight="448" prefWidth="520" styleClass="label " text="Текст" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-l_info" visible="1"/>
+        <FlatButton alignment="CENTER" color="#ce352c" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#ff8080" id="appclose2" layoutX="16" layoutY="16" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Отмена" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-appclose2" visible="1"/>
+        <FlatButton alignment="CENTER" color="#2086bf" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1b6eae" id="button" layoutX="840" layoutY="16" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Старт" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+        <Separator focusTraversable="false" id="separator" layoutX="8" layoutY="56" orientation="HORIZONTAL" prefHeight="0" prefWidth="984" style="-fx-background-color:  #88b9e3;&#10;-fx-background-radius: 1;&#10;-fx-border-style: none;" styleClass="separator "/>
+        <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+        <Circle fill="#88b9e3" focusTraversable="false" id="circle" layoutX="48" layoutY="82" radius="5.5" stroke="#88b9e3" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+        <Data cursor="DEFAULT" enabled="1" id="data-circle" visible=""/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="14"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/bg2.jpg" visible="1"/>
+    <ProgressIndicator focusTraversable="false" id="progressIndicator" layoutX="548.12145996094" layoutY="60.059577941895" prefHeight="50" prefWidth="50" progress="-0.01" style="-fx-progress-color: blue;" styleClass="progress-indicator "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-progressIndicator" visible="1"/>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="272" prefWidth="1000" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER" color="#ce352c" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#ff8080" id="appclose1" layoutX="16" layoutY="16" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Выход" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-appclose1" visible="1"/>
+        <FlatButton alignment="CENTER" color="#2086bf" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1b6eae" id="buttonAlt" layoutX="568" layoutY="48" prefHeight="32" prefWidth="128" styleClass="x-flat-button " text="Начать тест" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-buttonAlt" visible="1"/>
+        <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="e_fi" layoutX="304" layoutY="48" prefColumnCount="12" prefHeight="32" prefWidth="184" promptText="Фамилия и Имя" styleClass="text-input text-field " text="">
+          <font>
+            <Font name="Times New Roman" size="14"/>
+          </font>
+        </TextField>
+        <Data cursor="DEFAULT" enabled="1" id="data-e_fi" visible="1"/>
+        <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="e_group" layoutX="488" layoutY="48" prefColumnCount="12" prefHeight="32" prefWidth="72" promptText="Группа" styleClass="text-input text-field " text="">
+          <font>
+            <Font name="Times New Roman" size="14"/>
+          </font>
+        </TextField>
+        <Data cursor="DEFAULT" enabled="1" id="data-e_group" visible="1"/>
+        <FlatButton alignment="CENTER" color="#2086bf" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1b6eae" id="button8" layoutX="840" layoutY="16" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Обновить список" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button8" visible="1"/>
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="168" layoutY="24" prefHeight="21" prefWidth="664" styleClass="label " text="Введите, пожалуйста, Вашу фамилию и имя" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label5" layoutX="409" layoutY="88" prefHeight="18.62109375" prefWidth="172.5869140625" styleClass="label " text="Выберете тему для работы" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label5" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="14"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-preparetest" visible="1"/>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="paneltesting" layoutX="0" layoutY="816" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="600" prefWidth="1000" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER" color="#ce352c" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#ff8080" id="button3" layoutX="15" layoutY="24" prefHeight="32" prefWidth="160" styleClass="x-flat-button " text="Закончить тест" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button3" visible="1"/>
+        <FlatButton alignment="CENTER" color="#60a917" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#128023" id="button4" layoutX="824" layoutY="24" prefHeight="32" prefWidth="160" styleClass="x-flat-button " text="Следующий вопрос" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button4" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" autoSizeType="VERTICAL" contentDisplay="RIGHT" ellipsisString="..." focusTraversable="false" graphicTextGap="0" id="label" layoutX="16" layoutY="96" prefHeight="208" prefWidth="736" styleClass="label " text="Текст &#10;Текст 1&#10;Текст 2&#10;Текст 3&#10;Текст 4&#10;Текст 5&#10;Текст 6&#10;Текст 7&#10;Текст 8&#10;Текст 9" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-label" visible="1"/>
+        <ScrollPane focusTraversable="false" hbarPolicy="AS_NEEDED" hvalue="0" id="container" layoutX="3" layoutY="312" prefHeight="248" prefWidth="994" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="0" prefWidth="0" styleClass="">
+              <children/>
+            </AnchorPane>
+          </content>
+        </ScrollPane>
+        <Data cursor="DEFAULT" enabled="1" id="data-container" visible="1"/>
+        <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="168" layoutY="8" prefHeight="80" prefWidth="664" styleClass="label " text="Вопрос: х/у&#10;Времени осталось: 60с.&#10;Времени осталось: 60с.&#10;Правильность решения: 100%" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="240" id="imageAlt" layoutX="776" layoutY="64" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="208">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="14"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-paneltesting" visible="1"/>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panelresult" layoutX="0" layoutY="1440" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="400" prefWidth="1000" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <WebView focusTraversable="true" id="browser" layoutX="3" layoutY="64" prefHeight="296" prefWidth="994"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-browser" visible="1"/>
+        <FlatButton alignment="CENTER" color="#2086bf" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1b6eae" id="button5" layoutX="428" layoutY="8" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Выход" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button5" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="14"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panelresult" visible="1"/>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="stoppanel" layoutX="0" layoutY="1856" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="104" prefWidth="432" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="8" layoutY="16" prefHeight="19" prefWidth="416" styleClass="label " text="Вы уверены, что хотите закончить?" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+        <FlatButton alignment="CENTER" color="#ce352c" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#ff8080" id="button6" layoutX="312" layoutY="56" prefHeight="32" prefWidth="104" styleClass="x-flat-button " text="Да" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button6" visible="1"/>
+        <FlatButton alignment="CENTER" color="#60a917" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#128023" id="button7" layoutX="162" layoutY="56" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Нет" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button7" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="14"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-stoppanel" visible="1"/>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel_error" layoutX="448" layoutY="1856" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="104" prefWidth="488" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label6" layoutX="8" layoutY="8" prefHeight="17" prefWidth="184" styleClass="label " text="Ошибка ввода данных" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label6" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label7" layoutX="24" layoutY="32" prefHeight="37.2421875" prefWidth="284.8125" styleClass="label " text="1) Проверте корректность имиени и группы&#10;2) Проверте, выбрали ли вы тест" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label7" visible="1"/>
+        <FlatButton alignment="CENTER" color="#2086bf" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1b6eae" id="button9" layoutX="336" layoutY="64" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Хорошо, проверю" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button9" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="14"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel_error" visible="1"/>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panelAlt" layoutX="0" layoutY="1968" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="536" prefWidth="1000" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="520" id="image3" layoutX="8" layoutY="8" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="984">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image3" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="14"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panelAlt" visible="1"/>
+  </children>
+</AnchorPane>

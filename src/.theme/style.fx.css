@@ -1,0 +1,57 @@
+.text-field {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.text-field:focused {
+    -fx-background-color: #2086bf , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.x-flat-button{
+    -fx-font-size: 14px;
+    -fx-font-face: "Times New Roman";
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.label{
+    -fx-font-size: 14px;
+    -fx-font-face: "Times New Roman";
+}
+
+.labelbig{
+    -fx-font-size: 16px;
+    -fx-font-face: "Times New Roman";
+    -fx-font-weight: bold;
+}
+
+.redbutton{
+    //-fx-background-color: #ce352c;
+    -fx-background-color: linear-gradient(#ff5400, #ce352c);
+}
+
+.redbutton:hover{
+    -fx-background-color: #cc3333;
+}
+
+.redgutton:click{
+    -fx-background-color: #ff6666;
+}
+
+.bluebutton{
+    //-fx-background-color: #2086bf;
+    -fx-background-color: linear-gradient(#778ee8, #2086bf);
+}
+
+.bluebutton:hover{
+    -fx-background-color: #1b6eae;
+}
+
+.greenbutton{
+    //-fx-background-color: #60a917;
+    -fx-background-color: linear-gradient(#80b380, #60a917);
+}
+
+.greenbutton:hover{
+    -fx-background-color: #128023;
+}
