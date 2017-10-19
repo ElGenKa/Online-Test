@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="viktorova" authorOS="Windows 7" createdAt="1503031270413" ideName="DevelNext" ideVersion="16.6.0" ideVersionHash="2017072312" name="testsystem" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1508156187147">
+<project author="viktorova" authorOS="Windows 7" createdAt="1503031270413" ideName="DevelNext" ideVersion="16.6.0" ideVersionHash="2017072312" name="testsystem" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1508412698062">
   <tree>
     <expanded>
     <path src=""/>
@@ -16,10 +16,11 @@
   <file src="testsystem.dnproject"/>
     <file src="src/app/modules/MainModule.php"/>
     <file src="src/app/forms/settings.php"/>
-    <file src="src/app/forms/MainForm.php"/>
+    <file selected="1" src="src/app/forms/MainForm.php"/>
     <file src="src/.theme/style.fx.css"/>
     <file src="src/app/forms/loadform.php"/>
-    <file selected="1" src="src/app/forms/testsystem.php"/>
+    <file src="src/app/forms/preperetest.php"/>
+    <file src="src/app/forms/testsystem.php"/>
     <file src=".gitignore"/>
   </openedFiles>
   <files/>

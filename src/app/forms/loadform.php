@@ -16,7 +16,7 @@ class loadform extends AbstractForm
      * @event image.mouseEnter 
      */
 
-    function doImageMouseEnter(UXMouseEvent $e = null)
+    function doImageMouseEnter(UXMouseEvent $e = null) //Анимация кнопки обновления
     {    
         if($this->thrinit == false){
             $this->thrinit = true;
@@ -28,7 +28,7 @@ class loadform extends AbstractForm
     /**
      * @event image.mouseExit 
      */
-    function doImageMouseExit(UXMouseEvent $e = null)
+    function doImageMouseExit(UXMouseEvent $e = null) //Выключение анимации
     {    
         if($this->thrinit == true){
             $this->image->rotateAnim->disable();
@@ -40,19 +40,19 @@ class loadform extends AbstractForm
     /**
      * @event show 
      */
-    function doShow(UXWindowEvent $e = null)
+    function doShow(UXWindowEvent $e = null) //Появление формы
     {    
-        $APIURL = "http://192.168.2.6/test-online/api.desktop.php";
+        $APIURL = "http://192.168.2.6/test-online/api.desktop.php"; //Указываем URL до API
         $DEFURL = "http://192.168.2.6/test-online/";
         $test = new testsystem($APIURL,$DEFURL);
         $this->system = $test;
-        self::updtests();
+        self::updtests(); //Получаем список тестов
     }
 
     /**
      * @event image.click-Left 
      */
-    function doImageClickLeft(UXMouseEvent $e = null)
+    function doImageClickLeft(UXMouseEvent $e = null) //При нажатии на кнопку обновления
     {    
         self::updtests();
     }
@@ -61,15 +61,15 @@ class loadform extends AbstractForm
         $res = $this->system->get_test_list();
         $oldKey = "";
         $oldKey1 = "";
-        $y = 60;
-        $fade = 400;
+        $y = 60; //Позиция по высоте первого элемента
+        $fade = 250; //Начальный тайминг плавного появления
         if(!is_array($res)) {}
         foreach($res as $key => $value){
             foreach($value as $key1 => $value1){
-                $fade +=100;
-                if($key!=$oldKey){
+                $fade +=50; //Добавляем по 50 к анимции для каждого нового элемента
+                if($key!=$oldKey){ //Группа
                     $y +=22;
-                    $label = new UXLabel();
+                    $label = new UXLabel(); 
                     $label->text = $key;
                     $label->position = [10,$y];
                     $label->classesString .= " labelbig";
@@ -78,7 +78,7 @@ class loadform extends AbstractForm
                     $this->add($label);
                     $this->system->objectlist[] = $label;
                 }
-                if($key1!=$oldKey1){
+                if($key1!=$oldKey1){ //Дисциплина
                     $y +=22;
                     $label = new UXLabel();
                     $label->text = $key1;
@@ -93,7 +93,7 @@ class loadform extends AbstractForm
                 Animation::fadeIn($label, $fade);
                 $oldKey = $key;
                 $oldKey1 = $key1;
-                for($i=0;$i<count($value1);$i++){
+                for($i=0;$i<count($value1);$i++){ //Тесты для группы и дисциплины
                     $y +=30; 
                     $checkbox = new UXCheckbox();
                     $checkbox->data('id', $value1[$i][0]);
@@ -105,7 +105,7 @@ class loadform extends AbstractForm
                     $this->system->testlist[]=$checkbox;
                     $this->add($checkbox);
                     Animation::fadeIn($checkbox, $fade);
-                    $fade+=100;
+                    $fade+=50;
                     $checkbox->on('click', function ($ev) { //Функция клика 
                         global $test_list;                       
                         //$test_list = $this->form("MainForm")->test_list;   

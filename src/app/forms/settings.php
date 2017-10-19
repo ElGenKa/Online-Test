@@ -10,7 +10,7 @@ class settings extends AbstractForm
     /**
      * @event button.action 
      */
-    function doButtonAction(UXEvent $e = null)
+    function doButtonAction(UXEvent $e = null) //Применение параметров
     {    
         global $animspeed, $animsteep;
         $save = $this->checkbox->selected;
@@ -37,7 +37,7 @@ class settings extends AbstractForm
     /**
      * @event show 
      */
-    function doShow(UXWindowEvent $e = null)
+    function doShow(UXWindowEvent $e = null) //При появлении читаем ini файл
     {    
         global $animspeed, $animsteep;
         $gr = $this->ini->get("graphix","settings");
